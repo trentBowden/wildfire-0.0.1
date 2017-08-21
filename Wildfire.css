@@ -288,6 +288,26 @@ body {
                 .bu {
                   padding-top: 5vh;
                 }
+        .bu-plans-container {
+                  height:80vh;
+                  display: block;
+                  font-size: 20px;
+                  position:relative;
+                  z-index:1;
+                        }
+        .bu-plans {
+                  position:absolute;
+                  left:0;
+                  width:100%;
+                  height: 80vh;
+                  display: grid;
+                  grid-template-columns: 100%;
+                  grid-template-areas:
+                    "bu-one"
+                    "bu-two"
+                    "bu-three"
+                    "bu-four";
+                }
         .title {
                   height:80vh;
                 }
@@ -497,7 +517,16 @@ body {
       .bu-four {
       grid-area:bu-four;
     }
-
+  .bu-plans-container {
+    grid-area: buttons;
+    text-align: center;
+    position:relative;
+    left:-10vw;
+  }
+  .bu-plans {
+    background-color: #eee;
+    position:absolute;
+  }
 
   .title {
       grid-area: buttons;
