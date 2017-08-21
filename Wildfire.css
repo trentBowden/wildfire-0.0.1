@@ -138,6 +138,9 @@ body {
         margin-right: auto;
         padding-top: 4.5vh;
       }
+      .fa {
+        display: block;
+      }
   }
 
 @media (min-width:750px) {
@@ -224,6 +227,7 @@ body {
             padding-top: 2.5vh;
           }
       .index-menu { display: none;}
+      .fa {display: inline-block;}
     }
 
 @media (min-width:1000px) {
