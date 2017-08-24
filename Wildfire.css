@@ -8,17 +8,11 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     color:#444;
-    /**Background Image**/
-    background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #eab38f;
-    background-blend-mode: overlay;
-    /**End Background Image**/
+    background-color: #ddd;
+    position: relative;
   }
 
-@media (min-width:0px) {
+@media (min-width:0px) and (Orientation: Portrait) {
     .wrapper {
       width: 100vw;
       height: 100vh;
@@ -31,17 +25,20 @@ body {
         "body"
         "footer"  ;
     }
+
     .header {
       height:10vh;
-      grid-template-columns: 20vw 40vw 40vw;
+      grid-template-columns: 20vw 60vw 20vw;
       grid-template-areas: "h-logo ... h-menu";
       display: grid;
     }
       .h-menu-mobile {
           display: grid;
-          text-align: right;
+          text-align: center;
+          vertical-align: middle;
+          font-size: 24px;
+          color:#444;
         }
-
       .h-menu {
           display: none;
         }
@@ -50,6 +47,7 @@ body {
         grid-template-rows: 25% 25% 25% 25%;
         grid-template-areas: "hml1" "hml2" "hml3" "hml4"
         }
+
     .nav {
       height:80vh;
       display: none;
@@ -72,14 +70,19 @@ body {
     }
         .bu {
           padding-top:2vh;
-          }
-
+        }
+        .bu-plans-container {
+          top:-10vw;
+        }
 
     .title {
       height:15vh;
+      font-size: 48px;
+      background-color: #444;
+      color:#eee;
       }
       .ti {
-      padding-top: 4vh;
+      padding-top: 2.5vh;
       }
       .ti-extra {
         display:none;
@@ -104,7 +107,13 @@ body {
       grid-template-rows: 25% 25% 25% 25%;
       grid-template-areas: "i1" "i2" "i3" "i4";
       color:#414141;
-      text-align: center;
+      text-align: left;
+      background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #eab38f;
+      background-blend-mode: overlay;
 
     }
       .i1 {
@@ -113,7 +122,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         border-bottom: .5vh solid #414141;
-        padding-top: 4.5vh;
+        padding-top: 5.5vh;
+        font-size: 36px;
       }
       .i2 {
         grid-area: i2;
@@ -121,7 +131,8 @@ body {
         margin-left: auto;
         margin-right: auto;
         border-bottom: .5vh solid #414141;
-        padding-top: 4.5vh;
+        padding-top: 5.5vh;
+        font-size: 36px;
       }
       .i3 {
         grid-area: i3;
@@ -129,20 +140,207 @@ body {
         margin-left: auto;
         margin-right: auto;
         border-bottom: .5vh solid #414141;
-        padding-top: 4.5vh;
+        padding-top: 5.5vh;
+        font-size: 36px;
       }
       .i4 {
         grid-area: i4;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 4.5vh;
+        padding-top: 5.5vh;
+        font-size: 36px;
       }
       .fa {
-        display: block;
+        display: inline-block;
+        padding-left: 10vw;
+        padding-right: 5vw;
       }
+      .mobile-menu {
+        width:80%;
+        background-color: #ffa163;
+        color:#444;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 0px 1000px rgba(68,68,68,0..75);
+        -moz-box-shadow: 0px 0px 0px 1000px rgba(68,68,68,0..75);
+        box-shadow: 0px 0px 0px 1000px rgba(68,68,68,0.75);
+        z-index: 3;
+        position: absolute;
+        top:-110vh;
+        left:10vw;
+        display: none;
+      }
+        .mm-title-container {
+        display: block;
+        height: 15vh;
+      }
+        .mm-title {
+        font-size:36px;
+        padding-top:12px;
+      }
+        .mm-body {
+        background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size:cover;
+        background-color: #eab38f;
+        background-blend-mode: overlay;
+      }
+        .mm {
+        width: 60%;
+        margin: auto;
+        display: block;
+        font-size: 28px;
+        border-bottom: 3px solid #444;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color:#444;
+        text-decoration: none;
+      }
+        .mm-last {
+        border:0px solid #444;
+      }
+        .mm-exit {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 32px;
+      }
+
   }
 
+@media (min-width:0px) and (Orientation: Landscape) {
+  .wrapper {
+        width: 100vw;
+        height: 100vh;
+        display:grid;
+        grid-template-columns: 15vw 85vw;
+        grid-template-areas:
+          "header header"
+          "nav nav"
+          "buttons body"
+          "footer footer"  ;
+        }
+    .header {
+              height:10vh;
+              display: grid;
+              grid-template-columns: 10vw 50vw 40vw;
+              grid-template-areas: "h-logo ... h-menu";
+              font-size: 12px
+        }
+
+        .h-menu-mobile {
+                  display: none;
+                    }
+
+        .h-menu {
+                  display: grid;
+                  padding-top: 3.5vh;
+                  padding-right: 2vw;
+                    }
+        .hml {
+                padding-right: 1vw;
+        }
+    .nav {
+              height:10vh;
+              display: grid;
+              grid-template-columns: 25% 25% 25% 25%;
+              grid-template-areas:
+              "n-one n-two n-three n-four";
+              font-size: 14px;
+            }
+            .n {
+              padding-top: 2.5vh;
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+    .buttons {
+              height:80vh;
+              display: grid;
+              grid-template-columns: 100%;
+              grid-template-rows: 1fr 1fr 1fr 1fr;
+              grid-template-areas:
+                "bu-one"
+                "bu-two"
+                "bu-three"
+                "bu-four";
+
+            }
+            .bu {
+              padding-top: 5vh;
+              font-size: 12px;
+            }
+    .bu-plans-container {
+              height:80vh;
+              display: block;
+              font-size: 20px;
+              position:relative;
+              z-index:1;
+              left:20vw;
+              top:0;
+                    }
+    .bu-plans {
+              position:absolute;
+              left:0;
+              width:100%;
+              height: 80vh;
+              display: grid;
+              grid-template-columns: 100%;
+              grid-template-areas:
+                "bu-one"
+                "bu-two"
+                "bu-three"
+                "bu-four";
+            }
+    .title {
+              height:80vh;
+              background-color: #eee;
+
+            }
+      .ti-content {
+              display: block;
+              width: 90%;
+              margin:auto;
+
+            }
+      .ti-extra {
+        display: block;
+        padding-bottom: 10px;
+      }
+
+      .ti-h1 {
+        font-size: 16px;
+        padding-bottom: 20px;
+      }
+      .ti-h2 {font-size:12px;}
+      .ti-p {
+        font-size: 10px;
+        text-align: left;
+      }
+
+    .body {
+              height:80vh;
+              display: grid;
+              overflow-y: scroll;
+              grid-template-columns: 50% 50%;
+              grid-template-areas: "bo-one bo-two"
+            }
+
+    .footer {
+              height:10vh;
+              display: grid;
+              font-size: 10px;
+              padding-top: 3.5vh;
+            }
+
+    .fa-bu-big {
+              display: block;
+              font-size: 24px;
+    }
+    .index-menu {display:none}
+}
 @media (min-width:750px) {
 
       .wrapper {
@@ -196,12 +394,14 @@ body {
 
       .title {
             height:5vh;
+            background-color: #eee;
+            color: #444;
           }
           .ti {
             padding-top:.4vh;
           }
           .ti-h1 {
-            font-size: 32px;
+            font-size: 3vh;
           }
       .body {
             height:80vh;
@@ -227,16 +427,20 @@ body {
             padding-top: 2.5vh;
           }
       .index-menu { display: none;}
-      .fa {display: inline-block;}
+      .fa {
+        display: inline-block;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
 
-@media (min-width:1000px) {
+@media (min-width:1000px) and (Orientation: Landscape) {
 
       .wrapper {
             width: 100vw;
             height: 100vh;
             display:grid;
-            grid-template-columns: 20vw 80vw;
+            grid-template-columns: 15vw 85vw;
             grid-template-areas:
               "header header"
               "nav nav"
@@ -257,7 +461,7 @@ body {
 
             .h-menu {
                       display: grid;
-                      padding-top: 3.5vh;
+                      padding-top: 2.5vh;
                         }
         .nav {
                   height:10vh;
@@ -282,15 +486,17 @@ body {
                   height:80vh;
                   display: grid;
                   grid-template-columns: 100%;
+                  grid-template-rows: 1fr 1fr 1fr 1fr;
                   grid-template-areas:
                     "bu-one"
                     "bu-two"
                     "bu-three"
                     "bu-four";
-                  font-size: 20px;
+
                 }
                 .bu {
                   padding-top: 5vh;
+                  font-size: 20px;
                 }
         .bu-plans-container {
                   height:80vh;
@@ -298,6 +504,8 @@ body {
                   font-size: 20px;
                   position:relative;
                   z-index:1;
+                  left:20vw;
+                  top:0;
                         }
         .bu-plans {
                   position:absolute;
@@ -321,8 +529,15 @@ body {
                   margin:auto;
 
                 }
+          .ti-extra {
+            display: block;
+            padding-bottom: 10px;
+          }
 
-          .ti-h1 {font-size: 24px;}
+          .ti-h1 {
+            font-size: 24px;
+            padding-bottom: 20px;
+          }
           .ti-h2 {font-size:18px;}
           .ti-p {
             font-size: 14px;
@@ -346,7 +561,11 @@ body {
         .fa-bu-big {
                   display: block;
                   font-size: 50px;
+                  text-emphasis-style: dot;
+                  vertical-align: middle;
         }
+
+
           }
 
           /*end 1000px*/
@@ -359,15 +578,16 @@ body {
                     background-size: cover;
                     background-color: #eee;
                     /**End Background Image**/
-                    width: 100vw;
+                    width: 80vw;
+                    margin: auto;
                     height: 100vh;
                     display:grid;
-                    grid-template-columns: 10vw 15vw 65vw 10vw;
+                    grid-template-columns: 10vw 70vw;
                     grid-template-areas:
-                      "... header header ..."
-                      "... nav nav ..."
-                      "... buttons body ..."
-                      "footer footer footer footer"  ;
+                       "header header"
+                       "nav nav"
+                       "buttons body"
+                      "footer footer"  ;
                     }
                 .header {
                           height:6vh;
@@ -402,10 +622,11 @@ body {
                 .buttons {
                           height:88vh;
                           display: grid;
-                          font-size: 36px;
+
                         }
                     .bu {
                           padding-top: 7vh;
+                          font-size: 36px;
                     }
 
                 .title {
@@ -422,12 +643,6 @@ body {
                           display: grid;
                           grid-template-columns: 50% 50%;
                           grid-template-areas: "bo-one bo-two";
-                          background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
-                          background-repeat: no-repeat;
-                          background-attachment: fixed;
-                          background-size: cover;
-                          background-color: #eab38f;
-                          background-blend-mode: overlay;
                         }
 
                 .footer {
@@ -447,7 +662,7 @@ body {
 
   .header {
       grid-area: header;
-      background-color:#ffa163;
+      background-color: #ffa163;
       text-align: center;
       z-index: 2;
 
@@ -459,8 +674,7 @@ body {
 
       .h-menu-mobile {
         grid-area: h-menu;
-        padding-top: 1vh;
-        padding-right: 5vw;
+        padding-top: 3vh;
       }
 
       .h-menu {
@@ -481,10 +695,16 @@ body {
   .nav {
       grid-area: nav;
       background-color:#444;
-      color:#eee;
       text-align: center;
-
     }
+      .n {
+        color:#eee;
+        text-decoration: none;
+      }
+      .n:hover {
+        background-color:#777;
+        color:#eee;
+      }
       .n-one {
         grid-area:n-one;
       }
@@ -499,6 +719,11 @@ body {
       }
 
       .selected {
+        background-color: #ffa163;
+        color:#444;
+      }
+
+      .selected:hover {
         background-color: #ffa163;
         color:#444;
       }
@@ -521,27 +746,31 @@ body {
       .bu-four {
       grid-area:bu-four;
     }
-  .bu-plans-container {
-    grid-area: buttons;
-    text-align: center;
-    position:relative;
-    left:-10vw;
-  }
-  .bu-plans {
-    background-color: #eee;
-    position:absolute;
-  }
+    .bu-plans-container {
+      grid-area: buttons;
+      text-align: center;
+      position:relative;
+    }
+    .bu-plans {
+      background-color: #eee;
+      position:absolute;
+    s}
 
   .title {
       grid-area: buttons;
       text-align: center;
       font-family: Europa, sans-serif;
-      background-color: #ddd;
       }
 
   .body {
       grid-area: body;
-      z-index: 1
+      z-index: 1;
+      background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #eab38f;
+      background-blend-mode: overlay;
     }
       .bo-one {
         grid-area: bo-one;
@@ -555,9 +784,9 @@ body {
       background-color:#444;
       text-align: center;
       color: #ffa163;
-      box-shadow: 0px -5px 10px rgba(65,65,65,0.2);
-      -webkit-box-shadow: 0px -5px 10px rgba(65,65,65,0.2);
-      -moz-box-shadow: 0px -5px 10px rgba(65,65,65,0.2);
       z-index: 2;
     }
-}
+
+  a {
+      text-decoration: none;
+    }

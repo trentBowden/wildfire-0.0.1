@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <!--Meta Info-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--TypeKit Fonts-->
+    <script src="https://use.typekit.net/egg0jrm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!--Font Awesome-->
+    <link href="https://use.fontawesome.com/dfa807e4eb.css" media="all" rel="stylesheet">
+  <!--Stylesheet-->
+    <link href="/Users/scottbelcher/Projects/Wildfire/Wildfire-0.0.1/wildfire-0.0.1/Wildfire.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#mobile-menu-trigger").click(function(){
+            $("#mobile-menu").animate({top:'-4vh'})
+            $('#mobile-menu').css({display:'block'});
+        });
+      });
+      </script>
+
+      <script>
+        $(document).ready(function(){
+          $("#mobile-menu-close").click(function(){
+              $("#mobile-menu").animate({top:'-110vh'},function(){
+                $("#mobile-menu").css({display:'none'});
+            });
+          });
+        });
+        </script>
+
+</head>
+
+<body>
+  <div class="mobile-menu" id="mobile-menu">
+      <div class="mm-title-container">
+        <div class="mm-title">Wildfire</div>
+      </div>
+      <div class="mm-body">
+        <a href="" class="mm">
+          Home
+        </a>
+        <a href="" class="mm">
+          About
+        </a>
+        <a href="" class="mm">
+          Settings
+        </a>
+        <a href="" class="mm">
+          Help
+        </a>
+        <a href="" class="mm mm-last">
+          Log Out
+        </a>
+        <i href="" class="fa fa-fw fa-times mm-exit" id="mobile-menu-close"></i>
+      </div>
+  </div>
+  <a id="mobile-menu-trigger" href="javascript:">
+    <h1>Do the thing</h1>
+  </a>
+</body>

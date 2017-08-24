@@ -16,64 +16,95 @@
 
 <body>
   <div class="wrapper">
-    <div class="header">
-      <div class="h-logo">
+    <header class="header">
+      <a class="h-logo">
         WF
-      </div>
-      <div class="h-menu-mobile">
-        <i class="fa fa-fw fa-bars"></i>
-      </div>
+      </a>
+      <a class="h-menu-mobile" id="mobile-menu-trigger" href="javascript:">
+          <i class="fa fa-fw fa-bars"></i>
+      </a>
       <div class="h-menu">
         <div class="h-menu-links">
-          <div class="hml hml1">About</div>
-          <div class="hml hml2">Help</div>
-          <div class="hml hml3">Settings</div>
-          <div class="hml hml4">Log Out</div>
+          <a class="hml hml1">About</a>
+          <a class="hml hml2">Help</a>
+          <a class="hml hml3">Settings</a>
+          <a class="hml hml4">Log Out</a>
         </div>
       </div>
-    </div>
-    <div class="nav">
-      <div class="n n-one">
+    </header>
+    <nav class="nav">
+      <a href="" class="n n-one">
         <i class="fa fa-fw  fa-bullhorn"></i>
         Report
-        </div>
-      <div class="n n-two">
+      </a>
+      <a href="" class="n n-two">
         <i class="fa fa-fw fa-info"></i>
-        Status</div>
-      <div class="n n-three">
+        Status
+      </a>
+      <a href="" class="n n-three">
         <i class="fa fa-fw fa-list-ol"></i>
-        Prepare</div>
-      <div class="n n-last n-four selected">
+        Prepare
+      </a>
+      <a href="" class="n n-last n-four selected">
         <i class="fa fa-fw fa-graduation-cap"></i>
-        Learn</div>
-    </div>
+        Learn
+      </a>
+    </nav>
     <div class="body">
       <div class="bo-one">one</div>
       <div class="bo-two">two</div>
     </div>
-    <div class="buttons">
-      <div class="bu bu-one selected">
+    <nav class="buttons">
+      <a class="bu bu-one selected">
         <i class="fa fa-bu-big fa-fire-extinguisher" aria-hidden="true"></i>
         Fire Safety
-      </div>
-      <div class="bu bu-two">
+      </a>
+      <a class="bu bu-two">
         <i class="fa fa-bu-big fa-book" aria-hidden="true"></i>
         Preparing for<br>
         Fire Season
-      </div>
-      <div class="bu bu-three">
+      </a>
+      <a class="bu bu-three">
         <i class="fa fa-bu-big fa-list" aria-hidden="true"></i>
         Other Shit People<br>
         Wanna Know
-      </div>
-      <div class="bu bu-four bu-last">
+      </a>
+      <a class="bu bu-four bu-last">
         <i class="fa fa-bu-big fa-bomb" aria-hidden="true"></i>
         Shit People Don't<br>
         Wanna Know
-      </div>
-    </div>
-    <div class="footer">
+      </a>
+    </nav>
+    <footer class="footer">
       2017c ~ TS ~ Legal
-    </div>
+    </footer>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+      <div class="mm-title-container">
+        <div class="mm-title">Wildfire</div>
+      </div>
+      <div class="mm-body">
+        <a href="" class="mm">
+          Home
+        </a>
+        <a href="" class="mm">
+          About
+        </a>
+        <a href="" class="mm">
+          Settings
+        </a>
+        <a href="" class="mm">
+          Help
+        </a>
+        <a href="" class="mm mm-last">
+          Log Out
+        </a>
+        <i href="" class="fa fa-fw fa-times mm-exit" id="mobile-menu-close"></i>
+      </div>
   </div>
 </body>
+<!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Wildfire.js-->
+  <script src="/Users/scottbelcher/Projects/Wildfire/Wildfire-0.0.1/wildfire-0.0.1/Wildfire.js"></script>
+</html>
