@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Open Sans",sans-serif;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -28,8 +28,8 @@ body {
 
     .header {
       height:10vh;
-      grid-template-columns: 20vw 60vw 20vw;
-      grid-template-areas: "h-logo ... h-menu";
+      grid-template-columns: 20vw 20vw;
+      grid-template-areas: "h-logo  h-menu";
       display: grid;
     }
       .h-menu-mobile {
@@ -38,6 +38,7 @@ body {
           vertical-align: middle;
           font-size: 24px;
           color:#444;
+          padding-left: 65vw;
         }
       .h-menu {
           display: none;
@@ -51,12 +52,6 @@ body {
     .nav {
       height:80vh;
       display: none;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-template-areas:
-          "n-one"
-          "n-two"
-          "n-three"
-          "n-four"
     }
       .n {
         padding-top: 1vh;
@@ -72,23 +67,34 @@ body {
           padding-top:2vh;
         }
         .bu-plans-container {
-          top:-10vw;
+          top:20vh;
+          height: 15vh;
+          z-index: 2;
         }
-
+        .bu-plans {
+          position:absolute;
+          left:0;
+          width:100%;
+          height: 15vh;
+          display: grid;
+          grid-template-columns: 25% 25% 25% 25%;
+          grid-template-areas:
+            "bu-one bu-two bu-three bu-four";
+                }
     .title {
       height:15vh;
-      font-size: 48px;
+      font-size: 32px;
       background-color: #444;
       color:#eee;
       }
       .ti {
-      padding-top: 2.5vh;
+      padding-top: 4vh;
       }
       .ti-extra {
         display:none;
       }
     .body {
-      height:75vh;
+      height:80vh;
       display: grid;
       grid-template-columns: 100%;
       grid-template-areas: "bo-one" "bo-two"
@@ -106,7 +112,7 @@ body {
       height:75vh;
       grid-template-rows: 25% 25% 25% 25%;
       grid-template-areas: "i1" "i2" "i3" "i4";
-      color:#414141;
+      color:#444;
       text-align: left;
       background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
       background-repeat: no-repeat;
@@ -121,27 +127,27 @@ body {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        border-bottom: .5vh solid #414141;
+        border-bottom: .5vh solid #444;
         padding-top: 5.5vh;
-        font-size: 36px;
+        font-size: 32px;
       }
       .i2 {
         grid-area: i2;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        border-bottom: .5vh solid #414141;
+        border-bottom: .5vh solid #444;
         padding-top: 5.5vh;
-        font-size: 36px;
+        font-size: 32px;
       }
       .i3 {
         grid-area: i3;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        border-bottom: .5vh solid #414141;
+        border-bottom: .5vh solid #444;
         padding-top: 5.5vh;
-        font-size: 36px;
+        font-size: 32px;
       }
       .i4 {
         grid-area: i4;
@@ -149,13 +155,19 @@ body {
         margin-left: auto;
         margin-right: auto;
         padding-top: 5.5vh;
-        font-size: 36px;
+        font-size: 32px;
       }
-      .fa {
+      .fa-im {
         display: inline-block;
         padding-left: 10vw;
         padding-right: 5vw;
       }
+
+      .fa-bu-big {
+                display: block;
+                font-size: 32px;
+      }
+
       .mobile-menu {
         width:80%;
         background-color: #ffa163;
@@ -703,6 +715,7 @@ body {
       }
       .n:hover {
         background-color:#777;
+        transition: .1s;
         color:#eee;
       }
       .n-one {
@@ -718,22 +731,16 @@ body {
         grid-area:n-four;
       }
 
-      .selected {
-        background-color: #ffa163;
-        color:#444;
-      }
-
-      .selected:hover {
-        background-color: #ffa163;
-        color:#444;
-      }
-
   .buttons {
       grid-area: buttons;
       background-color:#eee;
       text-align: center;
     }
-
+    .bu:hover {
+      background-color:#f9b588;
+      transition: .1s;
+      color:#444;
+    }
       .bu-one {
       grid-area:bu-one;
     }
@@ -754,7 +761,7 @@ body {
     .bu-plans {
       background-color: #eee;
       position:absolute;
-    s}
+    }
 
   .title {
       grid-area: buttons;
@@ -786,7 +793,15 @@ body {
       color: #ffa163;
       z-index: 2;
     }
+    .selected {
+      background-color: #ffa163;
+      color:#444;
+    }
 
+    .selected:hover {
+      background-color: #ffa163;
+      color:#444;
+    }
   a {
       text-decoration: none;
     }
