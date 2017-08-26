@@ -4,7 +4,7 @@
   /*up*/
     $(document).ready(function(){
       $("#mobile-menu-trigger").click(function(){
-        $("#mobile-menu").animate({top:'10vh'})
+        $("#mobile-menu").animate({top:'0vh'})
         $('#mobile-menu').css({display:'block'});
       });
     });
