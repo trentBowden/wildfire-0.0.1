@@ -120,7 +120,9 @@ body {
       background-size: cover;
       background-color: #eab38f;
       background-blend-mode: overlay;
-
+    }
+    .index-menu a {
+      color: #444;
     }
       .i1 {
         grid-area: i1;
@@ -676,8 +678,12 @@ body {
       grid-area: header;
       background-color: #ffa163;
       text-align: center;
+      color: #444;
       z-index: 2;
     }
+  .header a {
+    color: #444;
+  }
       .h-logo {
         grid-area: h-logo;
         padding-top: 1vh;
