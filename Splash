@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <!--Meta Info-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--TypeKit Fonts-->
+    <script src="https://use.typekit.net/egg0jrm.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!--Font Awesome-->
+    <link href="https://use.fontawesome.com/dfa807e4eb.css" media="all" rel="stylesheet">
+  <!--Stylesheet-->
+    <link href="/Users/scottbelcher/Projects/Wildfire/Wildfire-0.0.1/wildfire-0.0.1/Wildfire.css" rel="stylesheet">
+    <link href="/wildfire-0.0.1/Wildfire.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="splash-wrapper">
+ <header class="splash-header">
+   <a href="/wildfire-0.0.1/index.html" class="sh-logo">
+     WF
+   </a>
+   <h1 class="sh-title">Wildfire</h1>
+ </header>
+ <nav class="splash-nav">
+   <a href="javascript:" class="n-splash n-splash-one">
+     Sign Up
+   </a>
+   <a href="javascript:" class="n-splash n-splash-two">
+     Log In
+   </a>
+
+ </nav>
+ <div class="splash-body1">
+   <div class="splash-about">
+      Wildfire<br><br>
+      The All in One Safety Tool for Emergencies<br><br>
+      Wildfire is a web and mobile app that allows you to prepare for and track bushfires as they happen.<br><br>
+      Using a range of resources we provide a comprehensive overview of your surroundings to help you make decisions to keep you and your family safe.<br><br>
+      Wildfire is simple to use - from watching fires near you, to planning your bushfire evacuation strategies, or just teaching your kids fire safety, Wildfire puts it all in the palm of your hand.<br><br>
+      Sign Up Button
+    </div>
+    <div class="splash-form" id="signup">
+      <i>Sign Up</i><br>
+      First Name<br>
+      Last Name<br>
+      Email<br>
+      Confirm Email<br>
+      Password<br>
+      Family Code (if you have one)<br>
+      Mobile Number (if you want)
+    </div>
+    <div class="splash-form" id="login" style="padding-top:300px;">
+      <i>Log in</i><br>
+      Email<br>
+      Password
+    </div>
+  </div>
+  <div class="splash-body2">
+    4. What is Wildfire (deep)
+      Overview
+      Report
+      Status
+      Prepare
+      Learn
+  </div>
+  <footer class="splash-footer">
+    TS
+  </footer>
+</div>
+</body>
+<!--Jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Wildfire.js-->
+  <script src="/Users/scottbelcher/Projects/Wildfire/Wildfire-0.0.1/wildfire-0.0.1/Wildfire.js"></script>
+  <script src="/wildfire-0.0.1/Wildfire.js"></script>
+</html>
