@@ -10,6 +10,7 @@ body {
     color:#444;
     background-color: #ddd;
     position: relative;
+    font-variant-ligatures: none;
   }
 
 @media (min-width:0px) and (Orientation: Portrait) {
