@@ -13,956 +13,192 @@ body {
     font-variant-ligatures: none;
   }
 
-@media (min-width:0px) and (Orientation: Portrait) {
-    .wrapper {
-      width: 100vw;
-      height: 100vh;
-      display:grid;
-      grid-template-columns: 100vw;
-      grid-template-areas:
-        "header"
-        "buttons"
-        "nav"
-        "body"
-        "footer"  ;
-    }
-
-    .header {
-      height:10vh;
-      grid-template-columns: 20vw 20vw;
-      grid-template-areas: "h-logo  h-menu";
-      display: grid;
-    }
-      .h-menu-mobile {
-          display: grid;
-          text-align: center;
-          vertical-align: middle;
-          font-size: 24px;
-          color:#444;
-          padding-left: 65vw;
-        }
-      .h-menu {
-          display: none;
-        }
-      .h-menu-links {
-        display: grid;
-        grid-template-rows: 25% 25% 25% 25%;
-        grid-template-areas: "hml1" "hml2" "hml3" "hml4"
-        }
-
-    .nav {
-      height:80vh;
-      display: none;
-    }
-      .n {
-        padding-top: 1vh;
-      }
-
-    .buttons {
-      height:15vh;
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-template-areas: "bu-one bu-two bu-three bu-four";
-    }
-        .bu {
-          padding-top:2vh;
-        }
-        .bu-plans-container {
-          top:20vh;
-          height: 15vh;
-          z-index: 2;
-        }
-        .bu-plans {
-          position:absolute;
-          left:0;
-          width:100%;
-          height: 15vh;
-          display: grid;
-          grid-template-columns: 25% 25% 25% 25%;
-          grid-template-areas:
-            "bu-one bu-two bu-three bu-four";
-                }
-    .title {
-      height:15vh;
-      font-size: 32px;
-      background-color: #444;
-      color:#eee;
-      }
-      .ti {
-      padding-top: 4vh;
-      }
-      .ti-extra {
-        display:none;
-      }
-    .body {
-      height:80vh;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-areas: "bo-one" "bo-two"
-    }
-    .body-nm
-          {display: none;}
-
-    .footer {
-      height:10vh;
-      display: grid;
-    }
-    .index-menu {
-      grid-area:body;
-      display: grid;
-      height:75vh;
-      grid-template-rows: 25% 25% 25% 25%;
-      grid-template-areas: "i1" "i2" "i3" "i4";
-      color:#444;
-      text-align: left;
-      background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-color: #eab38f;
-      background-blend-mode: overlay;
-    }
-    .index-menu a {
-      color: #444;
-    }
-      .i1 {
-        grid-area: i1;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        border-bottom: .5vh solid #444;
-        padding-top: 5.5vh;
-        font-size: 32px;
-      }
-      .i2 {
-        grid-area: i2;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        border-bottom: .5vh solid #444;
-        padding-top: 5.5vh;
-        font-size: 32px;
-      }
-      .i3 {
-        grid-area: i3;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        border-bottom: .5vh solid #444;
-        padding-top: 5.5vh;
-        font-size: 32px;
-      }
-      .i4 {
-        grid-area: i4;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 5.5vh;
-        font-size: 32px;
-      }
-      .fa-im {
-        display: inline-block;
-        padding-left: 10vw;
-        padding-right: 5vw;
-      }
-
-      .fa-bu-big {
-                display: block;
-                font-size: 32px;
-      }
-
-      .mobile-menu {
-        width:80%;
-        background-color: #ffa163;
-        color:#444;
-        text-align: center;
-        -webkit-box-shadow: 0px 0px 0px 1000px rgba(68,68,68,0..75);
-        -moz-box-shadow: 0px 0px 0px 1000px rgba(68,68,68,0..75);
-        box-shadow: 0px 0px 0px 1000px rgba(68,68,68,0.75);
-        z-index: 3;
-        position: absolute;
-        top:-110vh;
-        left:10vw;
-        display: none;
-      }
-        .mm-title-container {
-        display: block;
-        height: 15vh;
-      }
-        .mm-title {
-        font-size:36px;
-        padding-top:12px;
-      }
-        .mm-body {
-        background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size:cover;
-        background-color: #eab38f;
-        background-blend-mode: overlay;
-      }
-        .mm {
-        width: 60%;
-        margin: auto;
-        display: block;
-        font-size: 28px;
-        border-bottom: 3px solid #444;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color:#444;
-        text-decoration: none;
-      }
-        .mm-last {
-        border:0px solid #444;
-      }
-        .mm-exit {
-        padding: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 32px;
-      }
-    .splash-header {
-        ;
-      }
-    .splash-nav {
-        ;
-      }
-    .splash-body1 {
-        ;
-      }
-    .splash-body2 {
-        ;
-      }
-    .splash-footer {
-        ;
-      }
-  }
-@media (min-width:0px) and (Orientation: Landscape) {
-  .wrapper {
-        width: 100vw;
-        height: 100vh;
-        display:grid;
-        grid-template-columns: 15vw 85vw;
-        grid-template-areas:
-          "header header"
-          "nav nav"
-          "buttons body"
-          "footer footer"  ;
-        }
-    .header {
-              height:10vh;
-              display: grid;
-              grid-template-columns: 10vw 50vw 40vw;
-              grid-template-areas: "h-logo ... h-menu";
-              font-size: 12px
-        }
-
-        .h-menu-mobile {
-                  display: none;
-                    }
-
-        .h-menu {
-                  display: grid;
-                  padding-top: 3.5vh;
-                  padding-right: 2vw;
-                    }
-        .hml {
-                padding-right: 1vw;
-        }
-    .nav {
-              height:10vh;
-              display: grid;
-              grid-template-columns: 25% 25% 25% 25%;
-              grid-template-areas:
-              "n-one n-two n-three n-four";
-              font-size: 14px;
-            }
-            .n {
-              padding-top: 2.5vh;
-              width: 100%;
-              margin-left: auto;
-              margin-right: auto;
-            }
-
-    .buttons {
-              height:80vh;
-              display: grid;
-              grid-template-columns: 100%;
-              grid-template-rows: 1fr 1fr 1fr 1fr;
-              grid-template-areas:
-                "bu-one"
-                "bu-two"
-                "bu-three"
-                "bu-four";
-
-            }
-            .bu {
-              padding-top: 5vh;
-              font-size: 12px;
-            }
-    .bu-plans-container {
-              height:80vh;
-              display: block;
-              font-size: 20px;
-              position:relative;
-              z-index:1;
-              left:20vw;
-              top:0;
-                    }
-    .bu-plans {
-              position:absolute;
-              left:0;
-              width:100%;
-              height: 80vh;
-              display: grid;
-              grid-template-columns: 100%;
-              grid-template-areas:
-                "bu-one"
-                "bu-two"
-                "bu-three"
-                "bu-four";
-            }
-    .title {
-              height:80vh;
-              background-color: #eee;
-
-            }
-      .ti-content {
-              display: block;
-              width: 90%;
-              margin:auto;
-
-            }
-      .ti-extra {
-        display: block;
-        padding-bottom: 10px;
-      }
-
-      .ti-h1 {
-        font-size: 16px;
-        padding-bottom: 20px;
-      }
-      .ti-h2 {font-size:12px;}
-      .ti-p {
-        font-size: 10px;
-        text-align: left;
-      }
-
-    .body {
-              height:80vh;
-              display: grid;
-              overflow-y: scroll;
-              grid-template-columns: 50% 50%;
-              grid-template-areas: "bo-one bo-two"
-            }
-
-    .footer {
-              height:10vh;
-              display: grid;
-              font-size: 10px;
-              padding-top: 3.5vh;
-            }
-
-    .fa-bu-big {
-              display: block;
-              font-size: 24px;
-    }
-    .index-menu {display:none}
-    .splash-header {
-        ;
-      }
-    .splash-nav {
-        ;
-      }
-    .splash-body1 {
-        ;
-      }
-    .splash-body2 {
-        ;
-      }
-    .splash-footer {
-        ;
-      }
+a, a:visited {
+  color:#444;
+  text-decoration: none;
 }
-@media (min-width:750px) {
+a:hover {
+  color:#555;
+  text-decoration: none;
+}
 
-      .wrapper {
-            width: 100vw;
-            height: 100vh;
-            display:grid;
-            grid-template-columns: 100vw;
-            grid-template-areas:
-              "header"
-              "nav"
-              "buttons"
-              "body"
-              "footer"  ;
-          }
-
-      .header {
-            height:5vh;
-            display: grid;
-            grid-template-columns: 15vw 45vw 40vw;
-            grid-template-areas: "h-logo ... h-menu";
-      }
-          .h-menu-links {
-              display: grid;
-              grid-template-areas: "hml1 hml2 hml3 hml4";
-              margin-right:1.5vw;
-              font-size: 16px;
-      }
-
-      .nav {
-            height:5vh;
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
-            grid-template-areas:
-            "n-one n-two n-three n-four"
-          }
-          .n {
-            padding-top: 1.4vh;
-            font-size: 18px;
-          }
-
-      .buttons {
-            height:5vh;
-            display: grid;
-          }
-          .bu {
-            padding-top: 1.4vh;
-            font-size: 18px;
-          }
-
-      .title {
-            height:5vh;
-            background-color: #eee;
-            color: #444;
-          }
-          .ti {
-            padding-top:.4vh;
-          }
-          .ti-h1 {
-            font-size: 3vh;
-          }
-      .body {
-            height:85vh;
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-areas: "bo-one" "bo-two"
-          }
-      .body-nm {
-        display:grid;
-      }
-      .footer {
-            height:3vh;
-            display: grid;
-            padding-top:2.2vh;
-            font-size:12px;
-          }
-      .h-menu-mobile {
-            display: none;
-          }
-
-      .h-menu {
-            display: grid;
-            padding-top: 1.5vh;
-          }
-      .index-menu { display: none;}
-      .fa {
-        display: inline-block;
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-      .splash-header {
-          ;
-        }
-      .splash-nav {
-          ;
-        }
-      .splash-body1 {
-          ;
-        }
-      .splash-body2 {
-          ;
-        }
-      .splash-footer {
-          ;
-        }
-      .mobile-menu {
-        display: none;
-      }
-    }
-@media (min-width:1000px) and (Orientation: Landscape) {
-
-      .wrapper {
-            width: 100vw;
-            height: 100vh;
-            display:grid;
-            grid-template-columns: 15vw 85vw;
-            grid-template-areas:
-              "header header"
-              "nav nav"
-              "buttons body"
-              "footer footer"  ;
-            }
-        .header {
-                  height:5vh;
-                  display: grid;
-                  grid-template-columns: 10vw 50vw 40vw;
-                  grid-template-areas: "h-logo ... h-menu";
-                  font-size: 16px
-            }
-
-            .h-menu-mobile {
-                      display: none;
-                        }
-
-            .h-menu {
-                      display: grid;
-                      padding-top: 0vh;
-                        }
-            .h-menu-links {
-                      padding-top: 1vh;
-                    }
-        .nav {
-                  height:5vh;
-                  display: grid;
-                  grid-template-columns: 25% 25% 25% 25%;
-                  grid-template-areas:
-                  "n-one n-two n-three n-four";
-                  font-size: 22px;
-                }
-                .n {
-                  padding-top: 0vh;
-                  width: 100%;
-                  margin-left: auto;
-                  margin-right: auto;
-                }
-
-                .n-last {
-
-                }
-
-        .buttons {
-                  height:90vh;
-                  display: grid;
-                  grid-template-columns: 100%;
-                  grid-template-rows: 1fr 1fr 1fr 1fr;
-                  grid-template-areas:
-                    "bu-one"
-                    "bu-two"
-                    "bu-three"
-                    "bu-four";
-
-                }
-                .bu {
-                  padding-top: 5vh;
-                  font-size: 20px;
-                }
-        .bu-plans-container {
-                  height:90vh;
-                  display: block;
-                  font-size: 20px;
-                  position:relative;
-                  z-index:1;
-                  left:20vw;
-                  top:0;
-                        }
-        .bu-plans {
-                  position:absolute;
-                  left:0;
-                  width:100%;
-                  height: 90vh;
-                  display: grid;
-                  grid-template-columns: 100%;
-                  grid-template-areas:
-                    "bu-one"
-                    "bu-two"
-                    "bu-three"
-                    "bu-four";
-                }
-        .title {
-                  height:90vh;
-                }
-          .ti-content {
-                  display: block;
-                  width: 90%;
-                  margin:auto;
-
-                }
-          .ti-extra {
-            display: block;
-            padding-bottom: 10px;
-          }
-
-          .ti-h1 {
-            font-size: 24px;
-            padding-bottom: 20px;
-          }
-          .ti-h2 {font-size:18px;}
-          .ti-p {
-            font-size: 14px;
-            text-align: left;
-          }
-
-        .body {
-                  height:90vh;
-                  display: grid;
-                  grid-template-columns: 50% 50%;
-                  grid-template-areas: "bo-one bo-two"
-                }
-
-        .footer {
-                  height:5vh;
-                  display: grid;
-                  font-size: 12px;
-                  padding-top: 0vh;
-                }
-
-        .fa-bu-big {
-                  display: block;
-                  font-size: 50px;
-                  text-emphasis-style: dot;
-                  vertical-align: middle;
-        }
-        .splash-header {
-          height:10vh;
-          font-size: 16px
-          }
-        .splash-nav {
-          height:10vh;
-          }
-          .n-splash {
-            padding-top: 14px;
-            font-size: 28px;
-          }
-        .splash-body1 {
-          grid-template-columns:10vw 40vw 10vw 30vw 10vw;
-          grid-template-areas:
-            "... sabout ... sform ...";
-          height:80vh;
-          }
-            .slash-about {
-
-            }
-            .splash-form {
-
-            }
-        .splash-body2 {
-
-          }
-        .splash-footer {
-
-          }
-
-      }
-
-          /*end 1000px*/
-@media (min-width:2000px) {
-
-              .wrapper {
-                  /**Background Image**/
-                    background-image: none;
-                    background-size: cover;
-                    background-color: #eee;
-                    /**End Background Image**/
-                    width: 80vw;
-                    margin: auto;
-                    height: 100vh;
-                    display:grid;
-                    grid-template-columns: 10vw 70vw;
-                    grid-template-areas:
-                       "header header"
-                       "nav nav"
-                       "buttons body"
-                      "footer footer"  ;
-                    }
-                .header {
-                          height:6vh;
-                          display: grid;
-                          grid-template-columns: 8vw 40vw 32vw;
-                          grid-template-areas: "h-logo ... h-menu";
-                          font-size: 28px;
-
-                    }
-                    .h-menu-mobile {
-                              display: none;
-                            }
-                    .h-menu {
-                              display: grid;
-                              padding-top: 2.2vh;
-                            }
-
-                .nav {
-                          height:6vh;
-                        }
-                        .n {
-                          padding-top: 2vh;
-                          font-size: 32px;
-                          border-bottom: 2px solid #414141;
-                        }
-
-                        .n-last {
-                          border-bottom: 0 solid black;
-                        }
-
-
-                .buttons {
-                          height:88vh;
-                          display: grid;
-
-                        }
-                    .bu {
-                          padding-top: 7vh;
-                          font-size: 36px;
-                    }
-
-                .title {
-                          height:88vh;
-                        }
-                        .ti-h1 {font-size: 32px;}
-                        .ti-h2 {font-size:24px;}
-                        .ti-p {
-                          font-size: 16px;
-                          text-align: left;
-                        }
-                .body {
-                          height:88vh;
-                          display: grid;
-                          grid-template-columns: 50% 50%;
-                          grid-template-areas: "bo-one bo-two";
-                        }
-
-                .footer {
-                          height:3vh;
-                          padding-top:1.5vh;
-                          font-size: 18px;
-                          display: grid;
-                        }
-                .fa-bu-big {
-                          display: block;
-                          font-size: 96px;
-                        }
-                .splash-header {
-                            ;
-                          }
-                .splash-nav {
-                            ;
-                          }
-                .splash-body1 {
-                            ;
-                          }
-                .splash-body2 {
-                            ;
-                          }
-                .splash-footer {
-                            ;
-                          }
-                  }
-      /*end 2000px*/
-
-/**General**/
-
-  .header {
-      grid-area: header;
-      background-color: #ffa163;
-      text-align: center;
-      color: #444;
-      z-index: 2;
-    }
-      .header a {
-    color: #444;
+  .europa {
+    font-family: "Europa", sans-serif;
   }
-      .h-logo {
-        grid-area: h-logo;
-        padding-top: 1vh;
-      }
-      .h-menu-mobile {
-        grid-area: h-menu;
-        padding-top: 3vh;
-      }
-      .h-menu {
-        grid-area: h-menu;
-        text-align: right;
-      }
-      .h-menu-links {
-        color: #414141
-      }
-      .hml1 {grid-area:hml1}
-      .hml2 {grid-area:hml2}
-      .hml3 {grid-area:hml3}
-      .hml4 {grid-area:hml4}
-      .hml {}
 
-  .nav {
-      grid-area: nav;
-      background-color:#444;
+  .wrapper {
+    height:100vh;
+    width: 100vw;
+    position: relative;
+  }
+  .header {
+    height:50px;
+    width: 100vw;
+    background-color: #ffa163;
+  }
+    .h {
+      padding-top: 3px;
+      font-size: 24px;
+      display: inline-block;
+      text-decoration: none;
+      width:calc( (100vw - 20px) / 3 );
+      margin:auto;
+    }
+    .h-logo {
+      text-align: left;
+      padding-left: 5px;
+    }
+    .h-name {
       text-align: center;
     }
-      .n {
-        color:#eee;
-        text-decoration: none;
+    .h-menu {
+      text-align: right;
+      padding-right: 5px;
+    }
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+    .nav-inline {
+      background-color: #555;
+    }
+      .nav-inline a, .nav-inline a:visited {
+        color:#fafafa;
       }
-      .n:hover {
-        background-color:#777;
-        transition: .1s;
-        color:#eee;
+      .nav-inline a:hover {
+        color:#f5f5f5
       }
-      .n-one {
-        grid-area:n-one;
-      }
-      .n-two {
-        grid-area:n-two;
-      }
-      .n-three {
-        grid-area:n-three;
-      }
-      .n-four {
-        grid-area:n-four;
-      }
-
+    .n {
+      padding-top:20px;
+      padding-bottom: 20px;
+      font-size: 24px;
+    }
+    .n-inline:hover {
+      background-color:#666
+    }
+    .n-inline {
+      padding-left: calc(10px + 1vw);
+      padding-right: calc(10px + 1vw);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: calc(10px + 1vw);
+      color:#fafafa;
+    }
+    .n-selected {
+      border-bottom: 4px #ffa163 solid;
+      background-color: #777;
+      padding-bottom: 6px;
+    }
+    .n-icon {
+      height:120px;
+      width:120px;
+      border-radius:120px;
+      background-color:#ffa163;
+      margin:auto;
+    }
+    .n-h {
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    .n-h1 {
+      font-size: 28px;
+    }
+    .n-h2 {
+      font-size: 18px;
+      color:#888;
+    }
+  .body-container {}
+  .body {
+    min-height:calc(100vh - 50px);
+    text-align: center;
+  }
+    .sidebar {}
+      .s {}
+    .b {
+      margin: auto;
+      width:80%;
+      max-width: 40em;
+      text-align: left;
+    }
+    .b-one {
+      margin-top: 10px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .b-two {
+      margin-top: 10px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
   .buttons {
-      grid-area: buttons;
-      background-color:#eee;
-      text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    font-size: calc(8px + .8vw);
+  }
+    .bu {
+      padding-left: calc(2px + 1vw);
+      padding-right: calc(2px + 1vw);
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     .bu:hover {
-      background-color:#f9b588;
-      transition: .1s;
-      color:#444;
+      background-color: #ddd
     }
-      .bu-one {
-      grid-area:bu-one;
+    .bu-selected {
+      background-color: #cdcdcd;
+      padding-bottom: 6px;
+      border-bottom: 4px solid #ffa163
     }
-      .bu-two {
-      grid-area:bu-two;
-    }
-      .bu-three {
-      grid-area:bu-three;
-    }
-      .bu-four {
-      grid-area:bu-four;
-    }
-    .bu-plans-container {
-      grid-area: buttons;
-      text-align: center;
-      position:relative;
-    }
-    .bu-plans {
-      background-color: #eee;
-      position:absolute;
-    }
-
-  .title {
-      grid-area: buttons;
-      text-align: center;
-      font-family: Europa, sans-serif;
-    }
-
-  .body {
-      grid-area: body;
-      z-index: 1;
-      background-image: url(/wildfireframe/Wildfire-Background-Test.svg), url(/Users/scottbelcher/Projects/Wildfire/Wireframe/wildfireframe/Wildfire-Background-Test.svg);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      background-color: #eab38f;
-      background-blend-mode: overlay;
-    }
-      .bo-one {
-        grid-area: bo-one;
-    }
-      .bo-two {
-        grid-area: bo-two;
-    }
-
+    .bu-fa-icon {}
   .footer {
-      grid-area: footer;
-      background-color:#444;
-      text-align: center;
-      color: #ffa163;
-      z-index: 2;
-    }
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .fa-wf {}
 
-  .splash-wrapper {
-    display: grid;
-    width: 100vw;
-    grid-template-areas:
-      "header"
-      "nav"
-      "body1"
-      "body2"
-      "footer";
+  .menu {
+    display: none;
+    position:absolute;
+    top:-150vh;
+    right:10px;
+    height:350px;
+    width: 250px;
+    text-align: left;
+    font-size: 24px;
+    background-color: #fafafa;
+    -webkit-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
+    -moz-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,1);
+    box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
+
+  }
+    .m-links {
+      width: 4em;
+      margin: auto;
+      padding-top: 30px;
     }
-    .splash-header {
-      grid-area:header;
-      display: grid;
-      grid-template-columns: 10vw 80vw 10vw;
-      grid-template-areas: "sh-logo sh-title ...";
-      background-color: #ffa163;
-      text-align: center;
-      color: #444;
-      z-index: 2;
+    .m {
+      display: block;
+      padding-bottom: 20px;
     }
-      .sh-logo {
-          grid-area:sh-logo;
-      }
-      .sh-title {
-        grid-area:sh-title;
-      }
-    .splash-nav {
-      grid-area:nav;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        "n-splash-one n-splash-two";
-      background-color: #444;
-      color:#eee;
+    .m-exit {
       text-align: center;
     }
-      .splash-nav a {
-        color:#eee;
-        text-decoration: none;
-      }
-      .n-splash:hover {
-        background-color: #777;
-        transition: .1s
-      }
-      .n-splash-one {
-        grid-area:n-splash-one;
-      }
-      .n-splash-two {
-        grid-area:n-splash-two;
-      }
 
-    .splash-body1 {
-      grid-area:body1;
-      display: grid;
-    }
-      .splash-about {
-        grid-area:sabout;
-      }
-      .splash-form {
-        grid-area:sform;
-      }
-    .splash-body2 {
-      grid-area:body2;
-    }
-    .splash-footer {
-      grid-area:footer;
-    }
-
-
-    .selected {
-      background-color: #ffa163;
-      color:#444;
-    }
-
-    .selected:hover {
-      background-color: #ffa163;
-      color:#444;
-    }
-
-  a {
-      text-decoration: none;
-    }
+@supports (display: grid) {
+  @media (max-width:500px) and (orientation:portrait) {}
+  @media (max-width:500px) and (orientation:landscape) {}
+  @media (max-width:750px) and (orientation:portrait) {}
+  @media (max-width:750px) and (orientation:landscape) {}
+  @media (max-width:1000px) and (orientation:portrait) {}
+  @media (max-width:1000px) and (orientation:landscape) {}
+  @media (max-width:2000px) and (orientation:portrait) {}
+  @media (max-width:2000px) and (orientation:landscape) {}
+}

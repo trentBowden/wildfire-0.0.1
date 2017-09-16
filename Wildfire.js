@@ -3,16 +3,17 @@
 /**Mobile Menu**/
   /*up*/
     $(document).ready(function(){
-      $("#mobile-menu-trigger").click(function(){
-        $("#mobile-menu").animate({top:'10vh'})
-        $('#mobile-menu').css({display:'block'});
+      $("#menu-trigger").click(function(){
+        $("#menu").animate({top:'40px'})
+        $('#menu').css({display:'block'});
       });
     });
   /*down*/
     $(document).ready(function(){
-      $("#mobile-menu-close").click(function(){
-          $("#mobile-menu").animate({top:'-110vh'},function(){
-            $("#mobile-menu").css({display:'none'});
+      $("#menu-close").click(function(){
+          $("#menu").animate({top:'-150vh'},
+            function(){
+              $("#menu").css({display:'none'});
           });
         });
       });

@@ -1,0 +1,40 @@
+Wildfire Documentation
+
+CSS Format:
+
+1. Body Styling and Resets
+2. General Styling + Non-CSS Grid Styling
+3. @supports {display:grid} Opens
+  a. @media queries for <750px, <1000px, <2000px and 2000px+ for portrait and landscape each
+4. ideally nothing, but any last fixes/conditions etc.
+
+Classes:
+  .wrapper
+      display:grid container
+  .header
+      standard header class
+    .h-logo
+      logo container
+    .h-name
+      name container
+    .h-menu
+      hamburger menu trigger
+  .nav
+      4 categories nav container
+    .n
+      nav item
+    .n-one,n-two,n-three,n-four,n-last
+      specific nav items [replace with ids?]
+  .sidebar
+      Sidebar nav container
+    .s
+      Sidebar item
+  .body
+      Standard Body Container
+    .bo-one,bo-two
+      Specific Body Containers
+  .footer
+      Standard Footer Container
+
+  .fa-wf*
+      Any changes to font awesome icons are done through this class
