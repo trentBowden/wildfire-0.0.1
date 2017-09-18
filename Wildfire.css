@@ -189,6 +189,9 @@ a:hover {
     .m-exit {
       text-align: center;
     }
+    #plans-buttons {
+      display: none;
+    }
 
 
 /*End CSS Grid*/
@@ -860,7 +863,7 @@ a:hover {
           text-align: left;
         }
         .sidebar p {
-          text-align: justify;
+          text-align: left;
           font-size: 12px;
           line-height: 20px;
         }
