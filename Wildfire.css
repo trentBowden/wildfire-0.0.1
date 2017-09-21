@@ -105,7 +105,9 @@ a:hover {
       font-size: 18px;
       color:#888;
     }
-  .body-container {}
+  .body-container {
+    display: none;
+  }
   .body {
     min-height:calc(100vh - 50px);
     text-align: center;
@@ -195,7 +197,6 @@ a:hover {
 
 
 /*End CSS Grid*/
-
 @supports (display: grid) {
   #report {
     grid-area:report;
@@ -462,7 +463,7 @@ a:hover {
     }
     .body-container {
       height: calc(100vh - 130px);
-      display: grid;
+      display: none;
       grid-template-columns:  50% 50%;
     }
     .bu {
@@ -843,7 +844,6 @@ a:hover {
       grid-area:body-container;
       overflow-y:scroll;
       height:auto;
-      display: grid;
       grid-template-columns: 50% 50%;
     }
       .sidebar {
