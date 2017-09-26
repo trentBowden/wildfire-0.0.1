@@ -15,7 +15,23 @@
           });
         });
       });
-/**NEXT**/
+
+/**Splash Page**/
+$(document).ready(function(){
+  $("#signup").click(function(){
+      $("#b-signup").css({display:'block'}),
+      $("#b-login").css({display:'none'});
+    });
+  });
+
+  $(document).ready(function(){
+    $("#login").click(function(){
+        $("#b-login").css({display:'block'}),
+        $("#b-signup").css({display:'none'});
+      });
+    });
+
+/**Buttons**/
     $(document).ready(function(){
       $('#overview').click(function(){ showHideDiv("b-overview", true);
         // $("#b-overview").css({display:'grid'});
