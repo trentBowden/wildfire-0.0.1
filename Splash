@@ -63,6 +63,7 @@
   </div>
   <div class="splash-body" id="splash-overview">
     <div class="splash-content">
+      <i class="fa fa-4x fa-fire splash-fa-orange"></i>
       <h2 class="europa">Overview</h2>
 
       Wildfire is a web and mobile app that collects data from around the web and displays it in a useful and easy to understand way. In times of danger, we often get overwhelmed by the decisions we need to make. Our aim is to make these decisions as quick and painless for our users as possible. We organise and display relevant information for your situation, helping you assess risks and create plans to keep you and your family safe. Wildfire uses a range of data sources to help give you a complete overview of bushfire situations, and also allows you to plan and prepare for bushfire season. We hope Wildfire can help you to be prepared and safe during bushfire season.
@@ -70,6 +71,7 @@
   </div>
   <div class="splash-body" id="splash-report">
   <div class="splash-content">
+    <i class="fa fa-4x fa-bullhorn splash-fa-white"></i>
     <h2 class="europa">Report</h2>
 
     Wildfire uses crowdsourcing to help keep track of fires and other hazards. Using a simple multiple choice interface, users can report a fire sighting, a road blockage or other dangerous situation to the app, which is then visible to other users. This approach allows users to quickly communicate with their community, and helps both civilians as well as firefighters visualise where people are, where the fire is, and how best to react to the situation as it unfolds.
@@ -77,6 +79,7 @@
   </div>
   <div class="splash-body" id="splash-status">
   <div class="splash-content">
+    <i class="fa fa-4x fa-info splash-fa-orange"></i>
     <h2 class="europa">Status</h2>
 
     Wildfire provides a huge amount of information to users via the status page. We use maps, news feeds, information from other users as well as organisations such as the CFS to help users stay informed. As this is a lot to take in, especially in a stressful situation, we have split this information up into categories, so you can focus on the information you need most - whether it's a map of user reports, the fire danger rating for today or the closest evacuation point, Wildfire provides the information you need, when you need it.
@@ -84,6 +87,7 @@
   </div>
   <div class="splash-body" id="splash-prepare">
   <div class="splash-content">
+    <i class="fa fa-4x fa-list-ol splash-fa-white"></i>
     <h2 class="europa">Prepare</h2>
 
     The key to success is preparation, and fire safety is no different. Wildfire allows you to plan and prepare for bushfires by providing a way to create, collect and share information between you, your family and your community. This can be as simple as adding a safe evacuation location, or as complex as a full scale 'stay and defend' plan for your property. This means that when it's time to act in a bushfire situation, all the information you need is in the palm of your hand.
@@ -91,6 +95,7 @@
   </div>
   <div class="splash-body" id="splash-learn">
   <div class="splash-content">
+    <i class="fa fa-4x fa-graduation-cap splash-fa-orange"></i>
     <h2 class="europa">Learn</h2>
 
     The <i>other</i> key to success is knowledge. We know many of our users will be seasoned veterans of bushfires, and will know everything there is to know about fire safety. But for those that don't, we want to help you learn. We provide learning resources for young and old, so every member of your family will know how to be fire safe.
