@@ -213,8 +213,8 @@ a:hover {
       max-width:35em;
       width:80vw;
       margin: auto;
-      padding-top: 5%;
-      padding-bottom: 5%;
+      padding-top: 2%;
+      padding-bottom: 2%;
     }
 
     .splash-form-container {
@@ -582,6 +582,7 @@ a:hover {
           text-align: center;
         }
 
+
   }
   @media (orientation:landscape) {
     .n-links {
@@ -607,6 +608,148 @@ a:hover {
       padding-left: calc(2px + 3vw);
       padding-right: calc(2px + 3vw);
     }
+    .splash-wrapper {}
+    .splash-body {
+      background-color: #fafafa;
+      min-height:500px;
+    }
+    .splash-content {
+      max-width:60em;
+      width:90vw;
+      margin: auto;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "left right"
+    }
+
+    .splash-form-container {
+      max-width: 30em;
+      width: 60vw;
+      padding: 10px;
+      margin: auto;
+      display: none;
+    }
+    .splash-form {
+      width: 60vw;
+      max-width: 25em;
+      margin: auto;
+      line-height: 2;
+    }
+    .splash-form input {
+      height:20px;
+      max-width: 24em;
+      width: 50vw;
+      margin:auto;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 2px solid rgba(230,230,230,.5);
+      padding: 5px;
+      margin-top: 8px;
+      background-color: rgba(250,250,250,.95);
+      font-family: "Open Sans", sans-serif;
+    }
+    .splash-form button {
+      margin-top: 10px;
+      background: none;
+      padding: 10px;
+      border: 2px solid rgba(230,230,230,.9);
+      background-color: rgba(250,250,250,.85);
+      width: 12em;
+      border-radius:3px;
+      font-size: 14px;
+
+    }
+    .splash-selector {
+      border: 2px solid rgba(230,230,230,.9);
+      background-color: rgba(250,250,250,.85);
+      width: 80vw;
+      max-width: 19.8em;
+      margin: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      margin-top: 15vh;
+      margin-left: 5em;
+    }
+    .splash-button-container {
+      width: 35vw;
+      max-width: 9.7em;
+      height: 100%;
+      display: inline-block;
+      padding: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      cursor: pointer;
+    }
+    .splash-button {
+      color: #444;
+    }
+    .splash-button:hover{
+      color: #333;
+    }
+    .splash-fa-orange {
+      color:#ffa163;
+    }
+    .splash-fa-white {
+      color:#fafafa;
+    }
+    .splash-left {
+      grid-area:left;
+      max-width: 40em;
+      width: 30vw;
+      padding-top: 3em;
+      padding-bottom: 5em;
+    }
+    .splash-right {
+      grid-area:right;
+      max-width: 40em;
+      width: 30vw;
+      padding-top: 3em;
+      padding-bottom: 5em;
+    }
+      #forms {
+        text-align: center;
+      }
+      #splash-first {
+        background-color:#ffa163;
+        background-blend-mode: screen;
+        background-image: url(https://c1.staticflickr.com/5/4419/36004484584_abac0facfc_c.jpg);
+        background-attachment:fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      }
+      #signup {
+        border-right:2px solid rgba(230,230,230,.7);
+        margin-right:0;
+      }
+      #login {
+        margin-left:0;
+      }
+      #b-signup {
+        text-align: left;
+      }
+      #b-login {
+        text-align: left;
+      }
+      #splash-overview {
+        text-align: justify;
+      }
+      #splash-report {
+        background-color:#ffa163;
+        text-align: justify;
+      }
+      #splash-status {
+        text-align: justify;
+      }
+      #splash-prepare {
+        background-color:#ffa163;
+        text-align: justify;
+      }
+      #splash-learn {
+        text-align: justify;
+      }
   }
   @media (min-width:750px) and (orientation:portrait) {
     .wrapper {
