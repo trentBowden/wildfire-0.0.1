@@ -17,10 +17,12 @@
 
 <body>
 <div class="splash-wrapper">
-
   <div class="splash-body" id="splash-first">
     <div class="splash-content">
      <div class="splash-left">
+       <div class="splash-icon">
+         <img src="Wildfire_Logo_1.png"/>
+       </div>
       <h1 class="europa">Wildfire</h1>
       <h2 class="europa">The All in One Safety Tool for Emergencies</h2>
       <p>Wildfire is a web and mobile app that allows you to prepare for and track bushfires as they happen.</p>
@@ -40,7 +42,17 @@
         </div>
       </div>
       <div class="splash-form-container" id="b-signup">
+        <h3 class="europa splash-form-header">Sign up with your Social Media Account</h3>
+          <div class="splash-signup-button-container">
+            <div class="splash-signup-button" id="signupgoogle">
+              <i class="fa fa-fw fa-google"></i><br>Sign Up with Google</div>
+            <div class="splash-signup-button" id="signuptwitter">
+              <i class="fa fa-fw fa-twitter"></i><br>Sign Up with Twitter</div>
+            <div class="splash-signup-button"id="signupfacebook">
+              <i class="fa fa-fw fa-facebook"></i><br>Sign Up with Facebook</div>
+          </div>
           <form class="splash-form">
+            <h3 class="europa">or Create an Account</h3>
             <input type="text" required name="firstname" placeholder="First Name"><br>
             <input type="text" required name="lastname" placeholder="Last Name"><br>
             <input type="email" required name="email" placeholder="Email Address"><br>
@@ -52,7 +64,17 @@
         </form>
       </div>
       <div class="splash-form-container" id="b-login">
+        <h3 class="europa splash-form-header">Log in with your Social Media Account</h3>
+        <div class="splash-signup-button-container">
+          <div class="splash-signup-button" id="logingoogle">
+            <i class="fa fa-fw fa-google"></i><br>Log In with Google</div>
+          <div class="splash-signup-button" id="logintwitter">
+            <i class="fa fa-fw fa-twitter"></i><br>Log In with Twitter</div>
+          <div class="splash-signup-button"id="loginfacebook">
+            <i class="fa fa-fw fa-facebook"></i><br>Log In with Facebook</div>
+        </div>
           <form class="splash-form">
+            <h3 class="europa">or with your Wildfire account</h3>
             <input type="email" required name="email" placeholder="Email"><br>
             <input type="password" required name="pass" placeholder="Password"><br>
           <button type="submit">Log In</button>
@@ -118,6 +140,18 @@
     The <i>other</i> key to success is knowledge. We know many of our users will be seasoned veterans of bushfires, and will know everything there is to know about fire safety. But for those that don't, we want to help you learn. We provide learning resources for young and old, so every member of your family will know how to be fire safe.
   </div>
   <div class="splash-right">
+  </div>
+  </div>
+  </div>
+  <div class="splash-body" id="splash-accolades">
+  <div class="splash-content">
+    <div class="splash-right">
+    <i class="fa fa-4x fa-trophy splash-fa-white"></i>
+    <h2 class="europa">Accolades</h2>
+
+    Wildfire was the winning entry at the 2017 NASA Space Apps Hackathon in Adelaide, Australia. Neat!
+    </div>
+  <div class="splash-left">
   </div>
   </div>
   </div>

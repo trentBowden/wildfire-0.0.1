@@ -1,4 +1,4 @@
-/**Mobile Menu**/
+/**Menu Movement**/
   /*up*/
     $(document).ready(function(){
       $("#menu-trigger").click(function(){
@@ -15,6 +15,24 @@
           });
         });
       });
+
+/**Notifications Movement**/
+  /*up*/
+  $(document).ready(function(){
+    $("#notifications-trigger").click(function(){
+      $("#notifications").animate({top:'40px'})
+      $('#notifications').css({display:'block'});
+    });
+  });
+  /*down*/
+  $(document).ready(function(){
+    $("#notifications-close").click(function(){
+        $("#notifications").animate({top:'-150vh'},
+          function(){
+            $("#notifications").css({display:'none'});
+        });
+      });
+    });
 
 /**Splash Page**/
 $(document).ready(function(){
