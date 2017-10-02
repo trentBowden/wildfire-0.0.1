@@ -12,7 +12,7 @@
   "theme_color":"#ffa163",
   "display":"standalone",
   "lang":"en-UK",
-  "icon": [
+  "icons": [
     {
       "src":"resources/images/logo/144p.png",
       "type":"image/png",
