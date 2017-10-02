@@ -2,8 +2,13 @@
 <html lang ="en">
 <head>
   <!--Meta Info-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Trent Bowden"><meta name="author" content="Scott Belcher">
+
+  <title>Wildfire - The All in One Safety Tool for Emergencies</title>
+  <meta name="description" content="Wildfire Splash">
+  <meta name="keywords" content="wildfire bushfire wildfire app bush fire wild">
 
   <!--TypeKit Fonts-->
     <script src="https://use.typekit.net/egg0jrm.js"></script>

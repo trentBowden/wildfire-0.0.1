@@ -4,6 +4,12 @@
   <!--Meta Info-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Trent Bowden"><meta name="author" content="Scott Belcher">
+
+    <title>404 - Wildfire</title>
+    <meta name="description" content="404 - Content Not Found Page for Wildfire">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex"><!--Only Use if Specifically Disabling Search Engine Crawling-->
 
   <!--TypeKit Fonts-->
     <script src="https://use.typekit.net/egg0jrm.js"></script>
@@ -90,7 +96,7 @@
     </header>
     <div class="body body-grid">
       <header class="nav nav-inline">
-        <a href="Report.html" class="n n-inline n-selected">
+        <a href="Report.html" class="n n-inline">
           <i class="fa fa-fw  fa-bullhorn"></i>
           Report
         </a>
@@ -115,8 +121,8 @@
           <h2 class="europa">We couldn't find what you're looking for</h2>
           <p>If you think this is a mistake or a bug, please let us know! We're always working to improve Wildfire and your feedback is important to us.</p>
           <form>
-            <input type="text"  name="feedback" required></input><br>
-            <button type="submit">Submit</button>
+            <textarea rows="10" maxlength="500"  name="feedback" required class="feedback404"></textarea><br>
+            <button type="submit">Send Feedback</button>
           </form>
         </div>
         <div class="b b-two">
