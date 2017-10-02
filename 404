@@ -19,7 +19,7 @@
     <header class="header">
       <span class="h h-logo">
         <a href="index.html" class="h">
-          Logo
+          ∆
           </a>
         </span>
       <span class="h h-name europa">
@@ -77,6 +77,8 @@
             <a href="index.html" class="m-notifications">
               until we decide it stops
             </a>
+          </div>
+          <div class="m-seemore">
             <a href="notifications.html" class="m-note">
               See all Notifications
             </a>

@@ -182,7 +182,7 @@ button {
     position:absolute;
     top:-150vh;
     right:10px;
-    width: 20vw;
+    width: 25vw;
     max-width: 60em;
     min-width: 10em;
     text-align: left;
@@ -196,6 +196,13 @@ button {
     border-radius: 5px 5px 2px 2px;
   }
     .m-links {
+      width: 8em;
+      margin: auto;
+      padding-top: 15px;
+      overflow-y:scroll;
+      max-height: 40vh;
+    }
+    .m-seemore {
       width: 6em;
       margin: auto;
       padding-top: 15px;
@@ -204,6 +211,7 @@ button {
       display: block;
       padding-bottom: 15px;
       padding-top: 15px;
+      padding-left: 2vw;
       border-bottom: 2px solid rgba(160,160,160,.15)
     }
     .m-exit {
