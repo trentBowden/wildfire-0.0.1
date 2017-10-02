@@ -17,6 +17,21 @@
       "src":"resources/images/logo/144p.png",
       "type":"image/png",
       "sizes":"144x144"
+    },
+    {
+      "src":"resources/images/logo/125p.png",
+      "type":"image/png",
+      "sizes":"125x125"
+    },
+    {
+      "src":"resources/images/logo/250p.png",
+      "type":"image/png",
+      "sizes":"250x250"
+    },
+    {
+      "src":"resources/images/logo/500p.png",
+      "type":"image/png",
+      "sizes":"500x500"
     }
   ]
 

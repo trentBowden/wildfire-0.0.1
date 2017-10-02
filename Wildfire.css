@@ -91,10 +91,8 @@ button {
       padding-bottom: 6px;
     }
     .n-icon {
-      height:120px;
-      width:120px;
-      border-radius:120px;
-      background-color:#ffa163;
+      height:90px;
+      width: 90px;
       margin:auto;
     }
     .n-h {
@@ -551,13 +549,6 @@ button {
           background-color: #777;
           padding-bottom: 6px;
         }
-        .n-icon {
-          height:120px;
-          width:120px;
-          border-radius:120px;
-          background-color:#ffa163;
-          margin:auto;
-        }
         .n-h {
           padding-top: 10px;
           padding-bottom: 20px;
@@ -906,13 +897,6 @@ button {
         background-color: #777;
         padding-bottom: 6px;
       }
-      .n-icon {
-        height:120px;
-        width:120px;
-        border-radius:120px;
-        background-color:#ffa163;
-        margin:auto;
-      }
       .n-h {
         padding-top: 10px;
         padding-bottom: 20px;
@@ -1080,6 +1064,9 @@ button {
       grid-area:nav;
       padding-top: 10px;
     }
+      #index-icon {
+        height: 90px;
+      }
       .nav-inline {
         background-color: #555;
       }
@@ -1121,13 +1108,6 @@ button {
         border-bottom: none;
         background-color: #777;
         padding-bottom: 10px;
-      }
-      .n-icon {
-        height:120px;
-        width:120px;
-        border-radius:120px;
-        background-color: inherit;
-        margin:auto;
       }
       .n-h {
         padding-top: 10px;
