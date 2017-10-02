@@ -1,0 +1,19 @@
+/**manifest.json**/
+
+{
+  "short_name": "Wildfire",
+  "name": "Wildfire - The All in One Safety Tool for Emergencies",
+  "description":"An All in One Safety Tool to Keep People Safe in Bushfires",
+  "author": "Trentoscott - Trent Bowden & Scott Belcher",
+  "developer": {
+      "name":"Trentoscott - Trent Bowden & Scott Belcher",
+      "url":"http://trentoscott.co"
+    },
+  "start_url": "index.html?launcher=true",
+  "background_color": "#ffa163",
+  "theme_color":"#ffa163",
+  "display":"standalone",
+  "lang":"en-UK",
+  "scope":"/Wildfire/"
+
+}

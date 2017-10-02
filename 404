@@ -19,7 +19,7 @@
     <header class="header">
       <span class="h h-logo">
         <a href="index.html" class="h">
-          ∆
+          Logo
           </a>
         </span>
       <span class="h h-name europa">
@@ -87,13 +87,12 @@
       </div>
     </header>
     <div class="body body-grid">
-
       <header class="nav nav-inline">
-        <a href="Report.html" class="n n-inline">
+        <a href="Report.html" class="n n-inline n-selected">
           <i class="fa fa-fw  fa-bullhorn"></i>
           Report
         </a>
-        <a href="Status.html" class="n n-inline n-selected">
+        <a href="Status.html" class="n n-inline">
           <i class="fa fa-fw fa-info"></i>
           Status
         </a>
@@ -106,49 +105,22 @@
           Learn
         </a>
       </header>
-
-      <nav class="buttons">
-        <a class="bu" id="overview">
-          <i class="fa bu-fa-icon fa-exclamation-triangle"></i>
-          Overview
-        </a>
-        <a class="bu" id="maps">
-          <i class="fa bu-fa-icon fa-map-marker"></i>
-          Maps
-        </a>
-        <a class="bu" id="feeds">
-          <i class="fa bu-fa-icon fa-list"></i>
-          Feeds
-        </a>
-        <a class="bu" id="you">
-          <i class="fa bu-fa-icon fa-street-view"></i>
-          You
-        </a>
-      </nav>
-
-      <div class="body-container" id="b-overview">
-        <div class="b b-one">one</div>
-        <div class="b b-two">overview</div>
+      <div class="sidebar">
       </div>
+      <div class="b-init body-container">
+        <div class="b b-one">
+          <h1 class="europa">404</h1>
+          <h2 class="europa">We couldn't find what you're looking for</h2>
+          <p>If you think this is a mistake or a bug, please let us know! We're always working to improve Wildfire and your feedback is important to us.</p>
+          <form>
+            <input type="text"  name="feedback" required></input><br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="b b-two">
 
-
-      <div class="body-container" id="b-maps">
-        <div class="b b-one">Map</div>
-        <div class="b b-two">About the Map, Settings, Information etc.</div>
+        </div>
       </div>
-
-
-      <div class="body-container" id="b-feeds">
-        <div class="b b-one">feeds</div>
-        <div class="b b-two">tab</div>
-      </div>
-
-
-      <div class="body-container" id="b-you">
-        <div class="b b-one">you</div>
-        <div class="b b-two">are great</div>
-      </div>
-
     </div>
 
     <footer class="footer">

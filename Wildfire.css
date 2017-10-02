@@ -6,7 +6,7 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     color:#444;
-    background-color: #fdfdfd;
+    background-color: #eee;
     position: relative;
     font-variant-ligatures: none;
   }
@@ -18,6 +18,9 @@ a, a:visited {
 a:hover {
   color:#555;
   text-decoration: none;
+}
+button {
+  cursor: pointer;
 }
 
   .europa {
@@ -105,7 +108,9 @@ a:hover {
       font-size: 18px;
       color:#888;
     }
-  .body-container {}
+  .body-container {
+    display: none;
+  }
   .body {
     min-height:calc(100vh - 50px);
     text-align: center;
@@ -130,11 +135,14 @@ a:hover {
       margin-bottom: 10px;
       padding-bottom: 10px;
     }
+    .b-init {
+      display: grid;
+    }
   .buttons {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #eee;
+    background-color: #ddd;
     font-size: calc(8px + .8vw);
   }
     .bu {
@@ -144,12 +152,16 @@ a:hover {
       padding-bottom: 10px;
     }
     .bu:hover {
-      background-color: #ddd
+      background-color: #d4d4d4
     }
     .bu-selected {
-      background-color: #ddd;
+      background-color: #ccc;
       padding-bottom: 6px;
       border-bottom: 4px solid #ffa163
+    }
+    .bu-selected:hover {
+      background-color: #ccc;
+      color: #444;
     }
     .bu-fa-icon {}
   .footer {
@@ -160,6 +172,9 @@ a:hover {
     text-align: center;
     padding-top: 20px;
   }
+  .footer a {
+    color:#eee;
+  }
   .fa-wf {}
 
   .menu {
@@ -167,34 +182,255 @@ a:hover {
     position:absolute;
     top:-150vh;
     right:10px;
-    height:350px;
-    width: 250px;
+    width: 20vw;
+    max-width: 60em;
+    min-width: 10em;
     text-align: left;
     font-size: 24px;
+    font-family: "Europa", sans-serif;
     background-color: #fafafa;
-    -webkit-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
-    -moz-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,1);
-    box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
-
+    -webkit-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.55);
+    -moz-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.55);
+    box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.55);
+    border-top: 10px solid #ffa163;
+    border-radius: 5px 5px 2px 2px;
   }
     .m-links {
-      width: 4em;
+      width: 6em;
       margin: auto;
-      padding-top: 30px;
+      padding-top: 15px;
     }
     .m {
       display: block;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      border-bottom: 2px solid rgba(160,160,160,.15)
     }
     .m-exit {
       text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .m-notifications {
+      text-align: left;
+      font-size: 16px;
+      display: block;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      border-bottom: 2px solid rgba(160,160,160,.15)
+    }
+    .m-note {
+      font-size: 12px;
+      font-family: sans-serif;
+      color: #999;
     }
     #plans-buttons {
       display: none;
     }
+    .splash-wrapper {}
+    .splash-body {
+      background-color: #fafafa;
+      min-height:500px;
+    }
+    .splash-content {
+      max-width:35em;
+      width:80vw;
+      margin: auto;
+      padding-top: 15%;
+      padding-bottom: 20%;
+    }
+
+    .splash-form-container {
+      max-width: 30em;
+      width: 80vw;
+      margin: auto;
+      display: none;
+      text-align: center;
+    }
+    .splash-form {
+      width: 80vw;
+      max-width: 25em;
+      margin: auto;
+      line-height: 2;
+    }
+    .splash-form-header {
+      padding-left: 3vw;
+    }
+    .splash-form input {
+      height:20px;
+      max-width: 24em;
+      width: 75vw;
+      margin:auto;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 2px solid rgba(230,230,230,.5);
+      padding: 5px;
+      margin-top: 8px;
+      background-color: rgba(250,250,250,.85);
+      font-family: "Open Sans", sans-serif;
+    }
+    .splash-form button {
+      margin-top: 20px;
+      background: none;
+      padding: 10px;
+      border: 2px solid rgba(230,230,230,.9);
+      background-color: rgba(250,250,250,.85);
+      box-shadow: 2px 2px 2px 1px rgba(68,68,68,.3);
+      width: 12em;
+      border-radius:5px;
+      font-size: 14px;
+
+    }
+    .splash-selector {
+      border: 2px solid rgba(230,230,230,.8);
+      background-color: rgba(250,250,250,1);
+      width: 80vw;
+      max-width: 19.8em;
+      margin: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .splash-button-container {
+      width: 35vw;
+      max-width: 9.7em;
+      height: 100%;
+      display: inline-block;
+      padding: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      cursor: pointer;
+    }
+    .splash-button {
+      color: #444;
+    }
+    .splash-button:hover{
+      color: #333;
+    }
+    .splash-fa-orange {
+      color:#ffa163;
+    }
+    .splash-fa-white {
+      color:#fafafa;
+    }
+    .splash-left {}
+    .splash-right {}
+    .splash-lo {
+      display: none;
+      }
+    .splash-icon {
+      width: 100px;
+      height: 100px;
+      background-color: #ffa163;
+      border-radius: 120px;
+    }
+    .splash-icon img {
+      height: 100px;
+      width: 100px;
+    }
+    .splash-signup-button-container {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .splash-signup-button {
+      display: inline-block;
+      height: 70px;
+      width: 70px;
+      border-radius: 3px 3px 1px 1px;
+      list-style: none;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: rgba(250,250,250,1);
+      font-size: 12px;
+      text-align:center;
+      cursor: pointer;
+    }
+    .splash-signup-button:hover{
+      background-color: rgb(255,255,255);
+      box-shadow: 0px 0px 1px 1px rgba(55,55,55,.3);
+    }
+    #signupgoogle,#logingoogle {
+        border-top:5px solid #ea4335;
+    }
+      #signupgoogle i,#logingoogle i {
+        color: #ea4335;
+        font-size: 24px;
+        padding-top: 5px;
+      }
+    #signupfacebook,#loginfacebook {
+      border-top:5px solid #3b5998;
+    }
+      #signupfacebook i,#loginfacebook i {
+        color: #3b5998;
+        font-size: 24px;
+        padding-top: 5px;
+      }
+    #signuptwitter,#logintwitter {
+      border-top:5px solid #00aced;
+    }
+      #signuptwitter i,#logintwitter i {
+        color: #00aced;
+        font-size: 24px;
+        padding-top: 5px;
+      }
+
+      #forms {
+        text-align: center;
+      }
+      #splash-first {
+        background-color:#ffa163;
+        background-blend-mode: screen;
+        background-image: url(https://images.unsplash.com/photo-1486895893244-6000c5fa2830?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=);
+        background-attachment:fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      }
+      #signup {
+        border-right:2px solid rgba(230,230,230,.7);
+        margin-right:0;
+      }
+      #login {
+        margin-left:0;
+      }
+      #b-signup {
+        text-align: left;
+      }
+      #b-login {
+        text-align: left;
+      }
+      #splash-overview {
+        text-align: justify;
+      }
+      #splash-report {
+        background-color:#ffa163;
+        text-align: justify;
+      }
+      #splash-status {
+        text-align: justify;
+      }
+      #splash-prepare {
+        background-color:#ffa163;
+        text-align: justify;
+      }
+      #splash-learn {
+        text-align: justify;
+      }
+      #splash-accolades {
+        background-color:#ffa163;
+        text-align: justify;
+      }
+      #notifications-trigger {
+        padding-right: 2vw;
+      }
+      #menu-trigger {
+        padding-right: 2vw;
+      }
 
 
-/*End CSS Grid*/
+/*End no CSS Grid*/
+
 
 @supports (display: grid) {
   #report {
@@ -315,8 +551,8 @@ a:hover {
             "prepare learn";
           grid-gap: 6px;
           padding-top: 15px;
-          border-bottom: 2px solid #eee;
-          border-top: 2px solid #eee;
+          border-bottom: 2px solid #ddd;
+          border-top: 2px solid #ddd;
         }
         .n-fa {
           display: block;
@@ -363,11 +599,13 @@ a:hover {
           margin-bottom: 10px;
           padding-bottom: 10px;
         }
+        .b-init {
+          display: grid;
+        }
       .buttons {
         width: 100%;
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #eee;
         font-size: calc(8px + .8vw);
         grid-area: buttons;
         display: grid;
@@ -382,13 +620,10 @@ a:hover {
           padding-bottom: 10px;
           display: inline-block;
         }
-        .bu:hover {
-          background-color: #ddd
-        }
         .bu-selected {
           background-color: #ddd;
-          padding-bottom: 6px;
-          border-bottom: 4px solid #ffa163
+          padding-top: 6px;
+          border-top: 4px solid #ffa163
         }
         #one {
           grid-area:one;
@@ -416,33 +651,6 @@ a:hover {
       }
       .fa-wf {}
 
-      .menu {
-        display: none;
-        position:absolute;
-        top:-150vh;
-        right:10px;
-        height:350px;
-        width: 250px;
-        text-align: left;
-        font-size: 24px;
-        background-color: #fafafa;
-        -webkit-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
-        -moz-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,1);
-        box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
-
-      }
-        .m-links {
-          width: 4em;
-          margin: auto;
-          padding-top: 30px;
-        }
-        .m {
-          display: block;
-          padding-bottom: 20px;
-        }
-        .m-exit {
-          text-align: center;
-        }
 
   }
   @media (orientation:landscape) {
@@ -453,8 +661,8 @@ a:hover {
         "report status prepare learn";
       padding-top: 10px;
       padding-bottom: 5px;
-      border-bottom: 2px solid #eee;
-      border-top: 2px solid #eee;
+      border-bottom: 2px solid #ddd;
+      border-top: 2px solid #ddd;
     }
     .n-fa {
         display:block;
@@ -462,13 +670,144 @@ a:hover {
     }
     .body-container {
       height: calc(100vh - 130px);
-      display: grid;
+      display: none;
       grid-template-columns:  50% 50%;
     }
     .bu {
       padding-left: calc(2px + 3vw);
       padding-right: calc(2px + 3vw);
     }
+    .splash-wrapper {}
+    .splash-body {
+      background-color: #fafafa;
+      min-height:500px;
+    }
+    .splash-content {
+      max-width:60em;
+      width:90vw;
+      margin: auto;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "left right"
+    }
+
+    .splash-form-container {
+      max-width: 30em;
+      width: 60vw;
+      padding: 10px;
+      margin: auto;
+      display: none;
+    }
+    .splash-form {
+      width: 60vw;
+      max-width: 25em;
+      margin: auto;
+      line-height: 2;
+    }
+    .splash-form input {
+      height:20px;
+      max-width: 24em;
+      width: 50vw;
+      margin:auto;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 2px solid rgba(230,230,230,.5);
+      padding: 5px;
+      margin-top: 8px;
+      background-color: rgba(250,250,250,.95);
+      font-family: "Open Sans", sans-serif;
+    }
+    .splash-form button {
+      margin-top: 10px;
+      background: none;
+      padding: 10px;
+      border: 2px solid rgba(230,230,230,.9);
+      background-color: rgba(250,250,250,.85);
+      width: 12em;
+      border-radius:3px;
+      font-size: 14px;
+
+    }
+    .splash-selector {
+      border: 2px solid rgba(230,230,230,.9);
+      background-color: rgba(250,250,250,.85);
+      width: 80vw;
+      max-width: 19.8em;
+      margin: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      margin-top: 15vh;
+      margin-left: 5em;
+    }
+    .splash-button-container {
+      width: 35vw;
+      max-width: 9.7em;
+      height: 100%;
+      display: inline-block;
+      padding: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      cursor: pointer;
+    }
+    .splash-button {
+      color: #444;
+    }
+    .splash-button:hover{
+      color: #333;
+    }
+    .splash-fa-orange {
+      color:#ffa163;
+    }
+    .splash-fa-white {
+      color:#fafafa;
+    }
+    .splash-left {
+      grid-area:left;
+      max-width: 40em;
+      width: 40vw;
+      padding-top: 3em;
+      padding-bottom: 5em;
+    }
+    .splash-right {
+      grid-area:right;
+      max-width: 40em;
+      width: 40vw;
+      padding-top: 3em;
+      padding-bottom: 5em;
+    }
+    .splash-lo {
+      display: block;
+    }
+    .splash-icon {
+      margin-top:10vh;
+    }
+      #forms {
+        text-align: center;
+      }
+      #splash-first {
+        background-color:#ffa163;
+        background-blend-mode: screen;
+        background-image: url(https://images.unsplash.com/photo-1445302883545-a6da27dd4c7f?dpr=1&auto=compress,format&fit=crop&w=750&h=&q=80&cs=tinysrgb&crop=);
+        background-attachment:fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      }
+      #signup {
+        border-right:2px solid rgba(230,230,230,.7);
+        margin-right:0;
+      }
+      #login {
+        margin-left:0;
+      }
+      #b-signup {
+        text-align: left;
+      }
+      #b-login {
+        text-align: left;
+      }
   }
   @media (min-width:750px) and (orientation:portrait) {
     .wrapper {
@@ -565,8 +904,8 @@ a:hover {
         grid-template-areas:
           "report status prepare learn";
         padding-top: 25px;
-        border-bottom: 2px solid #eee;
-        border-top: 2px solid #eee;
+        border-bottom: 2px solid #ddd;
+        border-top: 2px solid #ddd;
       }
       .n-fa {
         display: block;
@@ -613,11 +952,13 @@ a:hover {
         margin-bottom: 10px;
         padding-bottom: 10px;
       }
+      .b-init {
+        display: grid;
+      }
     .buttons {
       width: 100%;
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #eee;
       font-size: calc(8px + .8vw);
       grid-area: buttons;
       display: grid;
@@ -632,9 +973,6 @@ a:hover {
         padding-bottom: 10px;
         display: inline-block;
         font-size: 18px;
-      }
-      .bu:hover {
-        background-color: #ddd
       }
       .bu-selected {
         background-color: #ddd;
@@ -667,33 +1005,6 @@ a:hover {
     }
     .fa-wf {}
 
-    .menu {
-      display: none;
-      position:absolute;
-      top:-150vh;
-      right:10px;
-      height:350px;
-      width: 250px;
-      text-align: left;
-      font-size: 24px;
-      background-color: #fafafa;
-      -webkit-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
-      -moz-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,1);
-      box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
-
-    }
-      .m-links {
-        width: 4em;
-        margin: auto;
-        padding-top: 30px;
-      }
-      .m {
-        display: block;
-        padding-bottom: 20px;
-      }
-      .m-exit {
-        text-align: center;
-      }
   }
   @media (min-width:750px) and (orientation:landscape) {
     .wrapper {
@@ -770,13 +1081,14 @@ a:hover {
       .n-inline {
         padding-top: calc(6px + 8%);
         padding-bottom: 0px;
-        padding-left: calc(10px + 1vw);
+        padding-left: 20%;
         padding-right: calc(10px + 1vw);
         height: 25%;
-        font-size: calc(8px + 1.2vw);
+        font-size: calc(16pt);
         color:#fafafa;
         display: block;
-        width: 100%
+        width: 100%;
+        text-align: left;
       }
       .n-selected {
         border-right: 4px #ffa163 solid;
@@ -843,13 +1155,12 @@ a:hover {
       grid-area:body-container;
       overflow-y:scroll;
       height:auto;
-      display: grid;
       grid-template-columns: 50% 50%;
     }
       .sidebar {
         display: block;
         grid-area:buttons;
-        background-color: #eee;
+        background-color: #ddd;
         height: auto;
         width: auto;
         text-align: center;
@@ -886,11 +1197,13 @@ a:hover {
         margin-bottom: 10px;
         padding-bottom: 10px;
       }
+      .b-init {
+        display: grid;
+      }
     .buttons {
       width: 100%;
       padding-top: 0;
       padding-bottom: 0;
-      background-color: #eee;
       font-size: calc(8px + .8vw);
       grid-area: buttons;
       display: grid;
@@ -906,11 +1219,9 @@ a:hover {
         display: inline-block;
         font-size: 14px;
       }
-      .bu:hover {
-        background-color: #ddd
-      }
+
       .bu-selected {
-        background-color: #ddd;
+        background-color: #ccc;
         padding-bottom: 10px;
         padding-right: calc(-2px + 1vw);
         border-right: 4px solid #ffa163;
@@ -941,39 +1252,8 @@ a:hover {
       padding-top: 20px;
     }
     .fa-wf {}
-
-    .menu {
-      display: none;
-      position:absolute;
-      top:-150vh;
-      right:10px;
-      height:350px;
-      width: 250px;
-      text-align: left;
-      font-size: 24px;
-      background-color: #fafafa;
-      -webkit-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
-      -moz-box-shadow: 0px 0px 0px 10000px rgba(51,51,51,1);
-      box-shadow: 0px 0px 0px 10000px rgba(51,51,51,.25);
-
-    }
-      .m-links {
-        width: 4em;
-        margin: auto;
-        padding-top: 30px;
-      }
-      .m {
-        display: block;
-        padding-bottom: 20px;
-      }
-      .m-exit {
-        text-align: center;
-      }
       .inline-link {
         text-decoration: underline;
       }
   }
-
-  @media (max-width:2048px) and (orientation:portrait) {}
-  @media (min-width:2049px) and (orientation:landscape) {}
 }
