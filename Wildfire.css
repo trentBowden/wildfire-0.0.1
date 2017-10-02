@@ -199,6 +199,11 @@ button {
       width: 8em;
       margin: auto;
       padding-top: 15px;
+    }
+    .m-notes {
+      width: 8em;
+      margin: auto;
+      padding-top: 15px;
       overflow-y:scroll;
       max-height: 40vh;
     }
