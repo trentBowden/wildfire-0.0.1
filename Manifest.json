@@ -14,9 +14,9 @@
   "lang":"en-UK",
   "icon": [
     {
-      "src":"Wildfire_Logo_1.png",
+      "src":"resources/images/logo/144p.png",
       "type":"image/png",
-      "sizes":"500x500"
+      "sizes":"144x144"
     }
   ]
 
