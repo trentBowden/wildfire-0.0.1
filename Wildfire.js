@@ -50,17 +50,17 @@ $(document).ready(function(){
     });
 
 /**Buttons**/
-    $(document).ready(function(){
-      $('#overview').click(function(){ showHideDiv("b-overview", true);
-        // $("#b-overview").css({display:'grid'});
-      });
-      $('#maps').click(function(){ showHideDiv("b-maps", true);
-      });
-      $('#feeds').click(function(){ showHideDiv("b-feeds", true);
-      });
-      $('#you').click(function(){ showHideDiv("b-you", true);
-      });
-    });
+$(document).ready(function(){
+  $('#overview').click(function(){ showHideDiv("b-overview", true);
+    // $("#b-overview").css({display:'grid'});
+  });
+  $('#maps').click(function(){ showHideDiv("b-maps", true);
+  });
+  $('#feeds').click(function(){ showHideDiv("b-feeds", true);
+  });
+  $('#you').click(function(){ showHideDiv("b-you", true);
+  });
+});
 
 function removeAllButSelected(selectedDiv) {
   //Buttons need to change class
